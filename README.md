@@ -1,6 +1,6 @@
 # Analítica de datos y aprendizaje automático para comprender y planificar la actividad comercial
 
-Repositorio del desarrollo computacional asociado al artículo de grado de Ingeniería de Sistemas de la Universidad Santo Tomás, Tunja, Colombia.
+Repositorio del desarrollo computacional asociado al artículo de grado de Ingeniería de Sistemas de la Universidad Santo Tomás – Seccional Tunja, Colombia.
 
 **Autor:** Julian Felipe Peralta Becerra  
 **Tutor del artículo:** Harrizon Soler
@@ -26,6 +26,7 @@ commercial-analytics-machine-learning/
 ├── CITATION.cff
 ├── LICENSE
 ├── .gitignore
+├── .gitattributes
 ├── data/
 │   ├── README.md
 │   └── online_retail_II.csv
@@ -41,7 +42,25 @@ Se utiliza Online Retail II (1.067.371 registros), correspondiente a un minorist
 
 ## Instalación
 
-Se requiere Python. La versión exacta de Python y las versiones principales de las bibliotecas utilizadas se registran en `results/metrics/29_entorno_reproducibilidad.json`. Las dependencias se instalan desde `requirements.txt`.
+### Entorno computacional de referencia
+
+Los resultados presentados en el artículo fueron reproducidos en Windows utilizando el siguiente entorno computacional:
+
+| Software | Versión |
+|---|---|
+| Python | 3.13.7 |
+| pandas | 2.2.3 |
+| NumPy | 2.3.5 |
+| scikit-learn | 1.8.0 |
+| Matplotlib | 3.11.2 |
+| SciPy | 1.18.1 |
+| joblib | 1.6.0 |
+
+Para reproducir los resultados se recomienda utilizar Python 3.13.7 e instalar las versiones exactas de las dependencias especificadas en `requirements.txt`. El uso de otras versiones de las bibliotecas puede generar pequeñas variaciones en las métricas de los modelos predictivos, incluso cuando se conservan los datos, los hiperparámetros y las semillas aleatorias.
+
+Las versiones principales del entorno de ejecución, las semillas, los cortes temporales y el identificador SHA-256 del conjunto de datos se encuentran registrados en [29_entorno_reproducibilidad.json](results/metrics/29_entorno_reproducibilidad.json).
+
+Antes de crear el entorno virtual, comprueba la versión de Python con `python --version` (o `python3 --version` en Linux o macOS).
 
 ### Windows (PowerShell)
 
@@ -49,14 +68,18 @@ Se requiere Python. La versión exacta de Python y las versiones principales de 
 python -m venv venv
 .\venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
+python -m pip check
 ```
 
 ### Linux o macOS
+
+Instrucciones alternativas de instalación; la ejecución de referencia descrita anteriormente se verificó en Windows. La disponibilidad de las dependencias puede variar según la plataforma.
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 python -m pip install -r requirements.txt
+python -m pip check
 ```
 
 ## Ejecución
@@ -86,7 +109,7 @@ python app.py --input "data/online_retail_II.csv" --output results
 | WAPE medio del promedio de cuatro semanas | 16,76 % |
 | WAPE medio de Random Forest temporal | 24,56 % |
 
-Los resultados de una ejecución se pueden comprobar en los archivos CSV y JSON generados. Para reproducir las cifras, deben coincidir el archivo de entrada y el entorno de ejecución.
+Los resultados de una ejecución se pueden comprobar en los archivos CSV y JSON generados. Para reproducir las cifras, deben coincidir el archivo de entrada y las versiones del entorno de ejecución. Las métricas de pronóstico de referencia se encuentran en [26_comparacion_pronosticos.csv](results/tables/26_comparacion_pronosticos.csv).
 
 ## Alcance y limitaciones
 

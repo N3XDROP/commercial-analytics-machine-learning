@@ -59,7 +59,7 @@
       "clientes": 1258,
       "recencia_mediana_dias": 16.0,
       "facturas_mediana": 11.0,
-      "gasto_mediano_GBP": 3966.655,
+      "gasto_mediano_GBP": 3966.6549999999997,
       "gasto_total_GBP": 11581382.65,
       "recencia_promedio_dias": 19.05643879173291,
       "pct_clientes": 21.496924128503075,
@@ -119,7 +119,7 @@
       "tasa_en_riesgo_pct": 48.0225988700565,
       "diferencia_alto_menos_riesgo_pp": 35.34582218257508,
       "razon_alto_vs_riesgo": 1.7360247678018574,
-      "participacion_gasto_futuro_alto_valor_pct": 59.60288103495177
+      "participacion_gasto_futuro_alto_valor_pct": 59.602881034951785
     },
     {
       "corte": "2010-09-01",
@@ -267,23 +267,23 @@
     {
       "clase_ABC": "A",
       "productos": 1030,
-      "ingreso_bruto_GBP": 15717260.389999999,
+      "ingreso_bruto_GBP": 15717260.39,
       "pct_sku": 21.88230295304865,
       "pct_ventas": 80.01581590739332
     },
     {
       "clase_ABC": "B",
       "productos": 1261,
-      "ingreso_bruto_GBP": 2943384.1599999997,
+      "ingreso_bruto_GBP": 2943384.16,
       "pct_sku": 26.789887401742085,
-      "pct_ventas": 14.984627043600026
+      "pct_ventas": 14.984627043600028
     },
     {
       "clase_ABC": "C",
       "productos": 2416,
       "ingreso_bruto_GBP": 982047.6,
       "pct_sku": 51.327809645209264,
-      "pct_ventas": 4.999557049006646
+      "pct_ventas": 4.999557049006645
     }
   ],
   "prioridad_riesgo": [
@@ -311,7 +311,7 @@
         "tasa_real_recompra_pct": 32.946210268948654,
         "AUC_ROC": 0.8134160987397085,
         "AUC_PR": 0.7175250161447537,
-        "Brier": 0.1635827625576855,
+        "Brier": 0.16358276255768556,
         "precision_umbral_050": 0.6677696889477167,
         "recall_umbral_050": 0.6239950525664811,
         "F1_umbral_050": 0.6451406649616368,
@@ -373,15 +373,15 @@
         "corte": "2011-06-01",
         "n_clientes": 4908,
         "tasa_real_recompra_pct": 32.946210268948654,
-        "AUC_ROC": 0.8168380360071986,
-        "AUC_PR": 0.7293625613344838,
-        "Brier": 0.1547464589619865,
-        "precision_umbral_050": 0.7196414017929911,
-        "recall_umbral_050": 0.5460729746444032,
-        "F1_umbral_050": 0.6209563994374121,
-        "falsos_positivos": 344,
-        "precision_top20_pct": 76.78207739307535,
-        "lift_top20": 2.330528360205404
+        "AUC_ROC": 0.8167997952475098,
+        "AUC_PR": 0.7299846964262401,
+        "Brier": 0.15454471735646053,
+        "precision_umbral_050": 0.7223127035830619,
+        "recall_umbral_050": 0.5485466914038343,
+        "F1_umbral_050": 0.6235500878734622,
+        "falsos_positivos": 341,
+        "precision_top20_pct": 76.27291242362524,
+        "lift_top20": 2.3150739281085513
       },
       {
         "modelo": "Gradient Boosting",
@@ -389,15 +389,15 @@
         "corte": "2011-09-01",
         "n_clientes": 5224,
         "tasa_real_recompra_pct": 42.80245022970903,
-        "AUC_ROC": 0.7956021312441178,
-        "AUC_PR": 0.7678806287676847,
-        "Brier": 0.1877129758514238,
-        "precision_umbral_050": 0.8057722308892356,
-        "recall_umbral_050": 0.4619856887298748,
-        "F1_umbral_050": 0.58726549175668,
-        "falsos_positivos": 249,
-        "precision_top20_pct": 83.82775119617224,
-        "lift_top20": 1.9584801978926827
+        "AUC_ROC": 0.7943982249810213,
+        "AUC_PR": 0.7675905627357008,
+        "Brier": 0.18811655784049633,
+        "precision_umbral_050": 0.8081123244929798,
+        "recall_umbral_050": 0.46332737030411447,
+        "F1_umbral_050": 0.5889710062535531,
+        "falsos_positivos": 246,
+        "precision_top20_pct": 84.01913875598086,
+        "lift_top20": 1.9629516138696066
       },
       {
         "modelo": "RFM base",
@@ -499,20 +499,20 @@
       },
       {
         "modelo": "Promedio 4 semanas",
-        "MAE_promedio_GBP": 26133.4695,
-        "WAPE_promedio_pct": 16.761291541754836,
+        "MAE_promedio_GBP": 26133.469500000003,
+        "WAPE_promedio_pct": 16.761291541754844,
         "cortes": 5
       },
       {
         "modelo": "Random Forest temporal",
-        "MAE_promedio_GBP": 44145.28318047726,
-        "WAPE_promedio_pct": 24.511007958414023,
+        "MAE_promedio_GBP": 44250.15164151883,
+        "WAPE_promedio_pct": 24.556855662804388,
         "cortes": 5
       },
       {
         "modelo": "Ultima semana",
-        "MAE_promedio_GBP": 39124.180499999995,
-        "WAPE_promedio_pct": 24.541765851023616,
+        "MAE_promedio_GBP": 39124.1805,
+        "WAPE_promedio_pct": 24.541765851023623,
         "cortes": 5
       }
     ],

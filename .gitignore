@@ -1,7 +1,10 @@
 # Entornos virtuales
 venv/
 .venv/
-env/
+.venv-verificacion/
+
+# Resultados de verificación
+results_verificacion/
 
 # Archivos temporales de Python
 __pycache__/
