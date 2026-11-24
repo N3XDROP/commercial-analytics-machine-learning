@@ -1,0 +1,5 @@
+﻿modelo,MAE_promedio_GBP,WAPE_promedio_pct,cortes
+Misma semana ano anterior,30469.451500,18.611951,5
+Promedio 4 semanas,26133.469500,16.761292,5
+Random Forest temporal,44145.283180,24.511008,5
+Ultima semana,39124.180500,24.541766,5

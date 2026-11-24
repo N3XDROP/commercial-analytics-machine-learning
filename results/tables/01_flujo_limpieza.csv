@@ -1,0 +1,6 @@
+﻿etapa,filas,diferencia_versus_etapa_anterior,criterio
+Archivo original,1067371,0,Todas las lineas recibidas
+Sin filas completamente duplicadas,1033036,34335,Eliminar duplicados identicos de las 8 columnas originales
+"Con factura, fecha, cantidad y precio legibles",1033036,0,Excluir errores de lectura en campos imprescindibles
+"Ventas positivas, sin facturas C",1007913,25123,Solo cantidad y precio positivos; sin facturas C
+Ventas positivas de mercancia identificable,1003214,4699,"Codigos SKU de cinco digitos y cero, una o dos letras"

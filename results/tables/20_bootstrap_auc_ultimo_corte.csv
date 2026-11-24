@@ -1,0 +1,4 @@
+﻿corte,indicador,n_boot,semilla,estimacion,bootstrap_pct_2_5,bootstrap_pct_97_5
+2011-09-01,AUC_RFM,500,20261121,0.782201,0.770259,0.794020
+2011-09-01,AUC_R_mas_F,500,20261121,0.781996,0.770030,0.793826
+2011-09-01,Diferencia_AUC_RFM_menos_RF,500,20261121,0.000205,-0.003108,0.003696

@@ -1,0 +1,526 @@
+{
+  "auditoria": {
+    "archivo": "online_retail_II.csv",
+    "sha256": "32569a66f3842a82b0d8c4d63b263c5d98a76bde5d1f65c6c01bf457e541d3a9",
+    "filas_originales": 1067371,
+    "filas_deduplicadas": 1033036,
+    "filas_duplicadas_exactas": 34335,
+    "inicio": "2009-12-01 07:45:00",
+    "fin": "2011-12-09 12:50:00",
+    "filas_ventas_positivas": 1007913,
+    "filas_mercancia_positivas": 1003214,
+    "facturas_ventas": 40077,
+    "facturas_mercancia": 39516,
+    "clientes_ventas": 5878,
+    "clientes_mercancia": 5852,
+    "importe_bruto_total_GBP": 20476260.448,
+    "importe_bruto_mercancia_GBP": 19642692.150000002,
+    "importe_bruto_no_mercancia_GBP": 833568.2979999967,
+    "creditos_observados_todos_GBP": -1462424.1800000002,
+    "creditos_observados_mercancia_GBP": -716425.97,
+    "saldo_movimientos_todos_GBP": 19013836.268,
+    "saldo_movimientos_mercancia_GBP": 18926266.180000003,
+    "gasto_mercancia_identificada_GBP": 17068567.970000003,
+    "participacion_mercancia_sin_ID_en_bruto_pct": 13.104742264160567,
+    "clientes_sin_id_original": 243007,
+    "duplicados_original": 34335,
+    "paises_mercancia": 43,
+    "sku_mercancia": 4707,
+    "porcentaje_creditos_sobre_bruto_mercancia": 3.64729011954708
+  },
+  "concentracion": {
+    "gini_gasto_bruto_clientes": 0.7408025027398102,
+    "participacion_top_1_pct": 32.08662905772757,
+    "participacion_top_10_pct": 63.89142363417616,
+    "clientes_con_una_factura": 1618,
+    "porcentaje_clientes_con_una_factura": 27.648667122351334
+  },
+  "segunda_compra": {
+    "n_elegibles_90d": 5256,
+    "n_segunda_compra_90d": 2447,
+    "tasa_segunda_90d_pct": 46.55631659056316,
+    "IC95_inferior_pct": 45.210800212663905,
+    "IC95_superior_pct": 47.90686306988752
+  },
+  "facturas_ambiguedad_ID": 0,
+  "corte_final": "2011-12-09T12:50:00.000001",
+  "cortes_validacion": [
+    "2010-06-01",
+    "2010-09-01",
+    "2010-12-01",
+    "2011-03-01",
+    "2011-06-01",
+    "2011-09-01"
+  ],
+  "horizonte_dias": 90,
+  "seg_ultimo_corte": [
+    {
+      "Segmento": "Alto valor",
+      "clientes": 1258,
+      "recencia_mediana_dias": 16.0,
+      "facturas_mediana": 11.0,
+      "gasto_mediano_GBP": 3966.655,
+      "gasto_total_GBP": 11581382.65,
+      "recencia_promedio_dias": 19.05643879173291,
+      "pct_clientes": 21.496924128503075,
+      "pct_gasto": 67.85210493554953
+    },
+    {
+      "Segmento": "Leales",
+      "clientes": 1322,
+      "recencia_mediana_dias": 65.0,
+      "facturas_mediana": 4.0,
+      "gasto_mediano_GBP": 1155.395,
+      "gasto_total_GBP": 2599298.72,
+      "recencia_promedio_dias": 70.2072617246596,
+      "pct_clientes": 22.590567327409435,
+      "pct_gasto": 15.228569406458531
+    },
+    {
+      "Segmento": "Recientes de baja frecuencia",
+      "clientes": 512,
+      "recencia_mediana_dias": 25.0,
+      "facturas_mediana": 2.0,
+      "gasto_mediano_GBP": 382.055,
+      "gasto_total_GBP": 443212.61,
+      "recencia_promedio_dias": 26.84375,
+      "pct_clientes": 8.749145591250855,
+      "pct_gasto": 2.596659607173829
+    },
+    {
+      "Segmento": "En riesgo",
+      "clientes": 709,
+      "recencia_mediana_dias": 366.0,
+      "facturas_mediana": 4.0,
+      "gasto_mediano_GBP": 1153.85,
+      "gasto_total_GBP": 1524847.55,
+      "recencia_promedio_dias": 358.99012693935117,
+      "pct_clientes": 12.115516062884483,
+      "pct_gasto": 8.933658363607874
+    },
+    {
+      "Segmento": "Otros",
+      "clientes": 2051,
+      "recencia_mediana_dias": 395.0,
+      "facturas_mediana": 1.0,
+      "gasto_mediano_GBP": 305.68,
+      "gasto_total_GBP": 919826.4400000001,
+      "recencia_promedio_dias": 382.14480741101903,
+      "pct_clientes": 35.047846889952154,
+      "pct_gasto": 5.389007687210212
+    }
+  ],
+  "comparacion_validacion": [
+    {
+      "corte": "2010-06-01",
+      "clientes": 2684,
+      "tasa_base_pct": 49.70193740685544,
+      "tasa_alto_valor_pct": 83.36842105263158,
+      "tasa_en_riesgo_pct": 48.0225988700565,
+      "diferencia_alto_menos_riesgo_pp": 35.34582218257508,
+      "razon_alto_vs_riesgo": 1.7360247678018574,
+      "participacion_gasto_futuro_alto_valor_pct": 59.60288103495177
+    },
+    {
+      "corte": "2010-09-01",
+      "clientes": 3299,
+      "tasa_base_pct": 58.32070324340709,
+      "tasa_alto_valor_pct": 84.30079155672823,
+      "tasa_en_riesgo_pct": 54.32595573440644,
+      "diferencia_alto_menos_riesgo_pp": 29.974835822321786,
+      "razon_alto_vs_riesgo": 1.551759014951627,
+      "participacion_gasto_futuro_alto_valor_pct": 62.193694554962235
+    },
+    {
+      "corte": "2010-12-01",
+      "clientes": 4239,
+      "tasa_base_pct": 33.19179051663128,
+      "tasa_alto_valor_pct": 69.79542719614922,
+      "tasa_en_riesgo_pct": 27.32843137254902,
+      "diferencia_alto_menos_riesgo_pp": 42.4669958236002,
+      "razon_alto_vs_riesgo": 2.5539492642178367,
+      "participacion_gasto_futuro_alto_valor_pct": 62.97033771774818
+    },
+    {
+      "corte": "2011-03-01",
+      "clientes": 4512,
+      "tasa_base_pct": 35.12854609929078,
+      "tasa_alto_valor_pct": 72.93086660175268,
+      "tasa_en_riesgo_pct": 24.11764705882353,
+      "diferencia_alto_menos_riesgo_pp": 48.813219542929154,
+      "razon_alto_vs_riesgo": 3.023962761536087,
+      "participacion_gasto_futuro_alto_valor_pct": 69.86097771507788
+    },
+    {
+      "corte": "2011-06-01",
+      "clientes": 4908,
+      "tasa_base_pct": 32.946210268948654,
+      "tasa_alto_valor_pct": 71.64579606440071,
+      "tasa_en_riesgo_pct": 17.792068595927116,
+      "diferencia_alto_menos_riesgo_pp": 53.85372746847359,
+      "razon_alto_vs_riesgo": 4.026839019764209,
+      "participacion_gasto_futuro_alto_valor_pct": 76.07133768194488
+    },
+    {
+      "corte": "2011-09-01",
+      "clientes": 5224,
+      "tasa_base_pct": 42.80245022970903,
+      "tasa_alto_valor_pct": 80.47579983593108,
+      "tasa_en_riesgo_pct": 31.403508771929825,
+      "diferencia_alto_menos_riesgo_pp": 49.07229106400126,
+      "razon_alto_vs_riesgo": 2.5626372014793697,
+      "participacion_gasto_futuro_alto_valor_pct": 72.43961977399796
+    }
+  ],
+  "auc_validacion": [
+    {
+      "corte": "2010-06-01",
+      "n_clientes": 2684,
+      "tasa_base_pct": 49.70193740685544,
+      "AUC_recencia": 0.6449286467877172,
+      "AUC_frecuencia": 0.7194794269531901,
+      "AUC_monetario": 0.7259870064967516,
+      "AUC_recencia_mas_frecuencia": 0.7149977788883336,
+      "AUC_RFM": 0.7426595035815425
+    },
+    {
+      "corte": "2010-09-01",
+      "n_clientes": 3299,
+      "tasa_base_pct": 58.32070324340709,
+      "AUC_recencia": 0.6543027783027783,
+      "AUC_frecuencia": 0.7025577395577396,
+      "AUC_monetario": 0.7005129465129465,
+      "AUC_recencia_mas_frecuencia": 0.7102755622755623,
+      "AUC_RFM": 0.7226208656208656
+    },
+    {
+      "corte": "2010-12-01",
+      "n_clientes": 4239,
+      "tasa_base_pct": 33.19179051663128,
+      "AUC_recencia": 0.6944078035970269,
+      "AUC_frecuencia": 0.7607484420110906,
+      "AUC_monetario": 0.7415973251177527,
+      "AUC_recencia_mas_frecuencia": 0.771882491296544,
+      "AUC_RFM": 0.7814875380964428
+    },
+    {
+      "corte": "2011-03-01",
+      "n_clientes": 4512,
+      "tasa_base_pct": 35.12854609929078,
+      "AUC_recencia": 0.7204495510632543,
+      "AUC_frecuencia": 0.752816861182572,
+      "AUC_monetario": 0.7451502868431518,
+      "AUC_recencia_mas_frecuencia": 0.7744880418253205,
+      "AUC_RFM": 0.7821844698386285
+    },
+    {
+      "corte": "2011-06-01",
+      "n_clientes": 4908,
+      "tasa_base_pct": 32.946210268948654,
+      "AUC_recencia": 0.762636410051438,
+      "AUC_frecuencia": 0.7590040076691984,
+      "AUC_monetario": 0.7551755156912079,
+      "AUC_recencia_mas_frecuencia": 0.8013846349567146,
+      "AUC_RFM": 0.8039868857683677
+    },
+    {
+      "corte": "2011-09-01",
+      "n_clientes": 5224,
+      "tasa_base_pct": 42.80245022970903,
+      "AUC_recencia": 0.7495141568061153,
+      "AUC_frecuencia": 0.7393986350889545,
+      "AUC_monetario": 0.7339917212080282,
+      "AUC_recencia_mas_frecuencia": 0.7819955283267835,
+      "AUC_RFM": 0.7822009564794659
+    }
+  ],
+  "intervalos_auc": [
+    {
+      "corte": "2011-09-01",
+      "indicador": "AUC_RFM",
+      "n_boot": 500,
+      "semilla": 20261121,
+      "estimacion": 0.7822009564794659,
+      "bootstrap_pct_2_5": 0.7702587444291178,
+      "bootstrap_pct_97_5": 0.794020386854514
+    },
+    {
+      "corte": "2011-09-01",
+      "indicador": "AUC_R_mas_F",
+      "n_boot": 500,
+      "semilla": 20261121,
+      "estimacion": 0.7819955283267835,
+      "bootstrap_pct_2_5": 0.770030041902853,
+      "bootstrap_pct_97_5": 0.7938259990618407
+    },
+    {
+      "corte": "2011-09-01",
+      "indicador": "Diferencia_AUC_RFM_menos_RF",
+      "n_boot": 500,
+      "semilla": 20261121,
+      "estimacion": 0.00020542815268231873,
+      "bootstrap_pct_2_5": -0.0031078379558783812,
+      "bootstrap_pct_97_5": 0.003695856398162735
+    }
+  ],
+  "ABC": [
+    {
+      "clase_ABC": "A",
+      "productos": 1030,
+      "ingreso_bruto_GBP": 15717260.389999999,
+      "pct_sku": 21.88230295304865,
+      "pct_ventas": 80.01581590739332
+    },
+    {
+      "clase_ABC": "B",
+      "productos": 1261,
+      "ingreso_bruto_GBP": 2943384.1599999997,
+      "pct_sku": 26.789887401742085,
+      "pct_ventas": 14.984627043600026
+    },
+    {
+      "clase_ABC": "C",
+      "productos": 2416,
+      "ingreso_bruto_GBP": 982047.6,
+      "pct_sku": 51.327809645209264,
+      "pct_ventas": 4.999557049006646
+    }
+  ],
+  "prioridad_riesgo": [
+    {
+      "alto_valor_historico": false,
+      "clientes": 385,
+      "gasto_historico_GBP": 286461.22000000003,
+      "porcentaje_del_gasto_en_riesgo": 18.786220301170438
+    },
+    {
+      "alto_valor_historico": true,
+      "clientes": 324,
+      "gasto_historico_GBP": 1238386.33,
+      "porcentaje_del_gasto_en_riesgo": 81.21377969882957
+    }
+  ],
+  "machine_learning": {
+    "mejor_modelo_segun_validacion": "Random Forest",
+    "metricas": [
+      {
+        "modelo": "Regresion logistica",
+        "periodo": "Validacion",
+        "corte": "2011-06-01",
+        "n_clientes": 4908,
+        "tasa_real_recompra_pct": 32.946210268948654,
+        "AUC_ROC": 0.8134160987397085,
+        "AUC_PR": 0.7175250161447537,
+        "Brier": 0.1635827625576855,
+        "precision_umbral_050": 0.6677696889477167,
+        "recall_umbral_050": 0.6239950525664811,
+        "F1_umbral_050": 0.6451406649616368,
+        "falsos_positivos": 502,
+        "precision_top20_pct": 75.45824847250509,
+        "lift_top20": 2.290346836753587
+      },
+      {
+        "modelo": "Regresion logistica",
+        "periodo": "Prueba",
+        "corte": "2011-09-01",
+        "n_clientes": 5224,
+        "tasa_real_recompra_pct": 42.80245022970903,
+        "AUC_ROC": 0.7859483551379041,
+        "AUC_PR": 0.7515627383856396,
+        "Brier": 0.18468190380948993,
+        "precision_umbral_050": 0.7387276096355775,
+        "recall_umbral_050": 0.5348837209302325,
+        "F1_umbral_050": 0.6204928664072633,
+        "falsos_positivos": 423,
+        "precision_top20_pct": 82.58373205741627,
+        "lift_top20": 1.9294159940426772
+      },
+      {
+        "modelo": "Random Forest",
+        "periodo": "Validacion",
+        "corte": "2011-06-01",
+        "n_clientes": 4908,
+        "tasa_real_recompra_pct": 32.946210268948654,
+        "AUC_ROC": 0.8181036454249112,
+        "AUC_PR": 0.7320771264843847,
+        "Brier": 0.15439563881091858,
+        "precision_umbral_050": 0.7184703010577705,
+        "recall_umbral_050": 0.5460729746444032,
+        "F1_umbral_050": 0.6205200281096276,
+        "falsos_positivos": 346,
+        "precision_top20_pct": 77.49490835030551,
+        "lift_top20": 2.352164565140998
+      },
+      {
+        "modelo": "Random Forest",
+        "periodo": "Prueba",
+        "corte": "2011-09-01",
+        "n_clientes": 5224,
+        "tasa_real_recompra_pct": 42.80245022970903,
+        "AUC_ROC": 0.7954338971868391,
+        "AUC_PR": 0.7701445195686849,
+        "Brier": 0.18623370887646484,
+        "precision_umbral_050": 0.8091844813935075,
+        "recall_umbral_050": 0.45706618962432916,
+        "F1_umbral_050": 0.5841669048299514,
+        "falsos_positivos": 241,
+        "precision_top20_pct": 84.7846889952153,
+        "lift_top20": 1.9808372777773022
+      },
+      {
+        "modelo": "Gradient Boosting",
+        "periodo": "Validacion",
+        "corte": "2011-06-01",
+        "n_clientes": 4908,
+        "tasa_real_recompra_pct": 32.946210268948654,
+        "AUC_ROC": 0.8168380360071986,
+        "AUC_PR": 0.7293625613344838,
+        "Brier": 0.1547464589619865,
+        "precision_umbral_050": 0.7196414017929911,
+        "recall_umbral_050": 0.5460729746444032,
+        "F1_umbral_050": 0.6209563994374121,
+        "falsos_positivos": 344,
+        "precision_top20_pct": 76.78207739307535,
+        "lift_top20": 2.330528360205404
+      },
+      {
+        "modelo": "Gradient Boosting",
+        "periodo": "Prueba",
+        "corte": "2011-09-01",
+        "n_clientes": 5224,
+        "tasa_real_recompra_pct": 42.80245022970903,
+        "AUC_ROC": 0.7956021312441178,
+        "AUC_PR": 0.7678806287676847,
+        "Brier": 0.1877129758514238,
+        "precision_umbral_050": 0.8057722308892356,
+        "recall_umbral_050": 0.4619856887298748,
+        "F1_umbral_050": 0.58726549175668,
+        "falsos_positivos": 249,
+        "precision_top20_pct": 83.82775119617224,
+        "lift_top20": 1.9584801978926827
+      },
+      {
+        "modelo": "RFM base",
+        "periodo": "Validacion",
+        "corte": "2011-06-01",
+        "n_clientes": 4908,
+        "tasa_real_recompra_pct": 32.946210268948654,
+        "AUC_ROC": 0.8039868857683677,
+        "AUC_PR": 0.6649897223468414,
+        "Brier": 0.17155477857923512,
+        "precision_umbral_050": 0.6586206896551724,
+        "recall_umbral_050": 0.590599876314162,
+        "F1_umbral_050": 0.6227583958265406,
+        "falsos_positivos": 495,
+        "precision_top20_pct": 74.13133370363512,
+        "lift_top20": 2.25007165007694
+      },
+      {
+        "modelo": "RFM base",
+        "periodo": "Prueba",
+        "corte": "2011-09-01",
+        "n_clientes": 5224,
+        "tasa_real_recompra_pct": 42.80245022970903,
+        "AUC_ROC": 0.7822009564794659,
+        "AUC_PR": 0.7238725304807226,
+        "Brier": 0.18549418298318401,
+        "precision_umbral_050": 0.7536136662286466,
+        "recall_umbral_050": 0.5129695885509838,
+        "F1_umbral_050": 0.6104310803618946,
+        "falsos_positivos": 375,
+        "precision_top20_pct": 82.03636363636363,
+        "lift_top20": 1.9166277443486746
+      },
+      {
+        "modelo": "Recencia + frecuencia",
+        "periodo": "Validacion",
+        "corte": "2011-06-01",
+        "n_clientes": 4908,
+        "tasa_real_recompra_pct": 32.946210268948654,
+        "AUC_ROC": 0.8013846349567147,
+        "AUC_PR": 0.6454831443889093,
+        "Brier": 0.1733197234160655,
+        "precision_umbral_050": 0.6386449184441656,
+        "recall_umbral_050": 0.629560915275201,
+        "F1_umbral_050": 0.6340703830582373,
+        "falsos_positivos": 576,
+        "precision_top20_pct": 74.46740719453227,
+        "lift_top20": 2.260272322268178
+      },
+      {
+        "modelo": "Recencia + frecuencia",
+        "periodo": "Prueba",
+        "corte": "2011-09-01",
+        "n_clientes": 5224,
+        "tasa_real_recompra_pct": 42.80245022970903,
+        "AUC_ROC": 0.7819955283267837,
+        "AUC_PR": 0.709954969495584,
+        "Brier": 0.18659632999420164,
+        "precision_umbral_050": 0.7389434889434889,
+        "recall_umbral_050": 0.5380143112701252,
+        "F1_umbral_050": 0.6226708074534162,
+        "falsos_positivos": 425,
+        "precision_top20_pct": 80.82598841601612,
+        "lift_top20": 1.8883495683598757
+      }
+    ],
+    "diferencia_AUC_vs_RFM_prueba": {
+      "modelo_seleccionado": "Random Forest",
+      "corte_prueba": "2011-09-01",
+      "diferencia_AUC_seleccionado_menos_RFM": 0.013232940707373242,
+      "IC95_bootstrap_inferior": 0.007218951087594294,
+      "IC95_bootstrap_superior": 0.018867413976119237,
+      "n_bootstrap": 500,
+      "nota": "IC condicional al corte y clientes; no valida otros negocios ni cambios de mercado"
+    },
+    "atributos": [
+      "Recency",
+      "Frequency",
+      "Monetary",
+      "antiguedad_observada_dias",
+      "ingreso_medio_por_factura",
+      "sku_promedio_por_factura",
+      "unidades_promedio_por_factura",
+      "facturas_ultimos_90d",
+      "importe_ultimos_90d_GBP",
+      "intervalo_medio_entre_facturas_dias"
+    ],
+    "seleccion_solo_validacion": "2011-06-01",
+    "prueba_no_usada_para_seleccion": "2011-09-01"
+  },
+  "pronostico_ventas": {
+    "mejor_metodo_por_WAPE_medio": "Promedio 4 semanas",
+    "metricas": [
+      {
+        "modelo": "Misma semana ano anterior",
+        "MAE_promedio_GBP": 30469.451500000003,
+        "WAPE_promedio_pct": 18.61195093083297,
+        "cortes": 5
+      },
+      {
+        "modelo": "Promedio 4 semanas",
+        "MAE_promedio_GBP": 26133.4695,
+        "WAPE_promedio_pct": 16.761291541754836,
+        "cortes": 5
+      },
+      {
+        "modelo": "Random Forest temporal",
+        "MAE_promedio_GBP": 44145.28318047726,
+        "WAPE_promedio_pct": 24.511007958414023,
+        "cortes": 5
+      },
+      {
+        "modelo": "Ultima semana",
+        "MAE_promedio_GBP": 39124.180499999995,
+        "WAPE_promedio_pct": 24.541765851023616,
+        "cortes": 5
+      }
+    ],
+    "criterio": "Ventas brutas semanales de mercancia. Se excluyen semanas incompletas."
+  },
+  "escenarios_hipoteticos": {
+    "ticket_mediano_observado_GBP": 301.53,
+    "n_clientes_objetivo": 1045,
+    "nota": "Margen, costo por contacto y uplift NO observados: supuestos de simulacion"
+  }
+}

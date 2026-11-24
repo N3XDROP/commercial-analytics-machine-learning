@@ -1,0 +1,2 @@
+﻿modelo_seleccionado,corte_prueba,diferencia_AUC_seleccionado_menos_RFM,IC95_bootstrap_inferior,IC95_bootstrap_superior,n_bootstrap,nota
+Random Forest,2011-09-01,0.013233,0.007219,0.018867,500,IC condicional al corte y clientes; no valida otros negocios ni cambios de mercado

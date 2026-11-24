@@ -1,0 +1,13 @@
+﻿incidencia,filas
+Duplicado exacto original,34335
+ID cliente ausente en original,243007
+Descripcion ausente en original,4382
+Fecha ilegible tras deduplicacion,0
+Cantidad <= 0 tras deduplicacion,22496
+Precio <= 0 tras deduplicacion,6019
+Codigo de factura de cancelacion,19104
+Creditos: cantidad negativa y precio positivo,19103
+Venta positiva con ID cliente ausente,228488
+Venta de mercancia con ID cliente ausente,226637
+Venta positiva con SKU no mercancia,4699
+Venta con cantidad > 10000,7

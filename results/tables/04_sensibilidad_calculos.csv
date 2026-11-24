@@ -1,0 +1,6 @@
+﻿escenario,GBP,criterio,diferencia_vs_bruto_mercancia_GBP,diferencia_vs_bruto_mercancia_pct
+Bruto original sin quitar duplicados (mercancia),20108995.400000,No deduplicar filas exactamente iguales,466303.250000,2.373927
+Bruto depurado (mercancia),19642692.150000,Deduplicacion exacta y codigos fisicos normalizados,0.000000,0.000000
+Saldo observado (mercancia),18926266.180000,Bruto depurado menos creditos de cantidad negativa,-716425.970000,-3.647290
+Bruto depurado sin 0.1% de lineas mas grandes,17917088.290000,"Prueba de sensibilidad; umbral linea GBP 763.83, NO limpieza oficial",-1725603.860000,-8.784966
+Bruto depurado de todas las referencias,20476260.448000,Incluye portes y movimientos de servicios o ajustes positivos,833568.298000,4.243656
